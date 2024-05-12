@@ -1,0 +1,78 @@
+.listArea {
+width: 73.18vw;
+height: 88.75vh;
+margin: 0vw 0.63vw;
+background: rgba(255, 255, 255, 0.5);
+
+.head {
+width: 73.18vw;
+height: 5.83vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+background: rgb(255, 255, 255);
+
+.title {
+width: 73.18vw;
+height: 5.83vh;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+padding: 0.83vw 1.25vw 0.83vw 1.25vw;
+box-shadow: inset 0vw -0.05vw 0vw 0vw rgb(240, 240, 240);
+font-size: 1.04vw;
+font-weight: 500;
+line-height: 1.25vw;
+text-align: left;
+box-sizing: border-box;
+}
+
+}
+
+.cards{
+width: 73.18vw;
+height: 77.08vh;
+padding: 0.63vw;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+
+.warning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 1.04vw;
+    font-weight: 500;
+    line-height: 1.25vw;
+}
+}
+
+.pagination {
+width: inherit;
+height: 3.33vh;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin: 0vw 0.83vw;
+
+:hover {
+    cursor: pointer;
+}
+.navigateButton {
+width: 1.67vw;
+height: 3.33vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0.52vw;
+margin: 0vw 0.42vw;
+box-sizing: border-box;
+border: 0.05vw solid rgb(217, 217, 217);
+border-radius: 0.1vw;
+background: rgb(255, 255, 255);
+}
+}
+}

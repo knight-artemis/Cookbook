@@ -1,0 +1,128 @@
+.filterAria {
+width: 24.22vw;
+height: 88.75vh;
+padding: 1.25vw;
+background: rgb(255, 255, 255);
+fill: rgb(255, 255, 255);
+box-sizing: border-box;
+
+.header {
+    width: 21.72vw;
+    height: 44.79vh;
+    padding: 1.25vw;
+    box-sizing: border-box;
+
+    img {
+        width: 19.22vw;
+        height: 16.67vh;
+    }
+
+    .text {
+        width: 19.22vw;
+        height: 20.63vh;
+        margin: 1.25vw 0vw;
+        color: rgb(0, 0, 0);
+        font-size: 0.73vw;
+        font-weight: 400;
+        line-height: 0.94vw;
+        letter-spacing: 0%;
+        text-align: justify;
+    }
+}
+
+.input {
+width: 21.72vw;
+height: 20.63vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+padding: 1.25vw;
+
+.select {
+width: 285px;
+height: 38px;
+}
+
+.resetButton {
+width: 7.86vw;
+height: 2.29vh;
+padding: 0vw;
+margin: 0.52vw 0vw;
+opacity: 0.3;
+border: 0px;
+color: rgb(24, 144, 255);
+font-family: Roboto;
+font-size: 0.73vw;
+font-weight: 400;
+line-height: 1.15vw;
+
+:hover {
+    cursor: pointer;
+}
+}
+
+}
+
+.additional {
+width: 21.72vw;
+height: 8.33vh;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 1.25vw;
+
+.addText {
+    width: 21.72vw;
+    height: 2.5vh;
+    margin: 1.25vw 0vw;
+    color: rgb(0, 0, 0);
+    font-size: 0.83vw;
+    font-weight: 400;
+    line-height: 1.25vw;
+}
+    .luckyButton {
+        width: 6.25vw;
+        height: 3.33vh;
+        padding: 0.21vw 0.78vw 0.21vw 0.78vw;
+        box-sizing: border-box;
+        border: 0.05vw solid rgb(217, 217, 217);
+        border-radius: 0.1vw;
+        box-shadow: 0vw 0.1vw 0vw 0vw rgba(0, 0, 0, 0.02);
+        background: rgb(255, 255, 255);
+        color: rgba(0, 0, 0, 0.85);
+        font-family: Roboto;
+        font-size: 0.73vw;
+        font-weight: 400;
+        line-height: 1.15vw;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+}
+}
+
+// input[type="radio"] {
+//   appearance: none;
+//   -webkit-appearance: none;
+// }
+
+// .radio-button {
+//   display: inline-block;
+//   padding: 10px 15px;
+//   border: 1px solid #ccc;
+//   border-radius: 5px;
+//   background-color: #fff;
+//   cursor: pointer;
+//   transition: all 0.2s ease-in-out;
+// }
+
+// .radio-button:hover {
+//   background-color: #f5f5f5;
+// }
+
+// /* Кнопка в активном состоянии */
+// .radio-button[aria-checked="true"] {
+//   background-color: #009900;
+//   color: #fff;
+// }
