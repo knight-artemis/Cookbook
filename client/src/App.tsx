@@ -1,25 +1,25 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import "./App.scss";
 import ListPage from "./pages/ListPage/ListPage";
 import { useEffect, useLayoutEffect, useMemo, useState } from "react";
 import { fetchAllRecipes } from "./redux/recipe/recipeThunkActions";
 import { useAppDispatch, useAppSelector } from "./redux/hooks";
 import RecipePage from "./pages/RecipePage/RecipePage";
-import { RecipeType } from "./types";
 
 function App() {
   const dispatch = useAppDispatch();
   const [country, setCountry] = useState("");
   const [type, setType] = useState("");
   const [complexity, setСomplexity] = useState("");
+  const navigate = useNavigate();
 
   useLayoutEffect(() => {
     dispatch(fetchAllRecipes());
   }, []);
 
   useEffect(() => {
-    console.log(complexity, "Я сложность");
-  }, [complexity]);
+    navigate("/1");
+  }, []);
 
   const data = useAppSelector((store) => store.recipeSlice);
 

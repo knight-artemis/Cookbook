@@ -108,7 +108,6 @@ export default function FilterArea({
           />
           <label htmlFor="any">Any</label>
           <input
-            // className={style.radioButton}
             type="radio"
             name="complexity"
             id="Easy"
@@ -116,7 +115,6 @@ export default function FilterArea({
           />
           <label htmlFor="easy">Easy</label>
           <input
-            // className={style.radioButton}
             type="radio"
             name="complexity"
             id="Medium"
@@ -124,7 +122,6 @@ export default function FilterArea({
           />
           <label htmlFor="medium">Medium</label>
           <input
-            // className={style.radioButton}
             type="radio"
             name="complexity"
             id="Hard"

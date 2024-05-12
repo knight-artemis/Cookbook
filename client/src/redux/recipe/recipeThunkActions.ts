@@ -9,12 +9,3 @@ export const fetchAllRecipes = createAsyncThunk('recipe/get', async () => {
     )
     return response.data
 })
-
-// export const fetchFilteredRecipes = createAsyncThunk('recipe/filtered', async ({data}:{data: string[]}) => {
-//     const response = await axios.post<RecipeType[]>(
-//         `${import.meta.env.VITE_API}/recipe/getAllRecepies`,
-//     data,
-//     { withCredentials: true },
-//     )
-//     return response.data
-// })

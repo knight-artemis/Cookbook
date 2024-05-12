@@ -23,70 +23,19 @@ const recipeInitialState: RecipeType[] = [
     }
 ]
 
-// const recipeSlice = createSlice({
-//     name: 'recipeSlice',
-//     initialState: recipeInitialState,
-//     reducers: {},
-//     extraReducers: (builder) => {
-//         builder.addCase(
-//             fetchAllRecipes.fulfilled,
-//             (state, { payload }: { payload: RecipeType[] }) => {
-//                 return payload
-//             }
-//         )
-//     }
-// })
-
-// const recipeSlice = createSlice({
-//   name: 'recipeSlice',
-//   initialState: recipeInitialState,
-//   reducers: {
-//     setFilters: (state, action) => {
-//       const { country, type, complexity } = action.payload;
-//       return state.filter((recipe) => {
-//         return (
-//           (country === '' || recipe.cuisine === country) &&
-//           (type === '' || recipe.mealType.includes(type)) &&
-//           (complexity === '' || recipe.difficulty === complexity)
-//         );
-//       });
-//     },
-//   },
-//   extraReducers: (builder) => {
-//     builder.addCase(
-//       fetchAllRecipes.fulfilled,
-//       (state, { payload }: { payload: RecipeType[] }) => {
-//         return payload;
-//       }
-//     );
-//   },
-// });
-
 const recipeSlice = createSlice({
-  name: 'recipeSlice',
-  initialState: recipeInitialState,
-  reducers: {
-    setFilters: (state, action) => {
-      const { country, type, complexity } = action.payload;
-      return state.filter((recipe) => {
-        return (
-          (country === '' || recipe.cuisine === country) &&
-          (type === '' || recipe.mealType.includes(type)) &&
-          (complexity === '' || recipe.difficulty === complexity)
-        );
-      });
-    },
-  },
-  extraReducers: (builder) => {
-    builder.addCase(
-      fetchAllRecipes.fulfilled,
-      (state, { payload }: { payload: RecipeType[] }) => {
-        return payload;
-      }
-    );
-  },
-});
+    name: 'recipeSlice',
+    initialState: recipeInitialState,
+    reducers: {},
+    extraReducers: (builder) => {
+        builder.addCase(
+            fetchAllRecipes.fulfilled,
+            (state, { payload }: { payload: RecipeType[] }) => {
+                return payload
+            }
+        )
+    }
+})
 
-export const { setFilters } = recipeSlice.actions;
 
 export default recipeSlice.reducer;

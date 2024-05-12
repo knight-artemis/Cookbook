@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { RecipeType } from "../../types";
 import style from "./Card.module.scss";
 

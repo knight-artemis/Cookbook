@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { RecipeType } from "../../types";
 import Card from "../Card/Card";
 import style from "./ListArea.module.scss";
@@ -46,7 +46,6 @@ export default function ListArea({
           className={style.navigateButton}
           onClick={() => navigate(id >= pagesQuantity ? `/1` : `/${id + 1}`)}
         >{`>`}</button>
-        {/* </Link> */}
       </div>
     </div>
   );
